@@ -17,7 +17,7 @@ $ expense-tracker list
 $ expense-tracker summary
 # Total expenses: $30
 
-$ expense-tracker delete --id 2
+$ expense-tracker delete id 2
 # Expense deleted successfully
 
 $ expense-tracker summary
