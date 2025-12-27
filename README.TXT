@@ -25,3 +25,5 @@ $ expense-tracker summary
 
 $ expense-tracker summary --month 8
 # Total expenses for August: $20
+
+https://github.com/agusBorra/Expense-Tracker
