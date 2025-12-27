@@ -1,7 +1,7 @@
 import jsonManager
 import click
 from datetime import datetime
-
+import calendar
 
 @click.group
 def cli():
@@ -50,11 +50,12 @@ def summary(month):
     total = 0
     if month:
         total = 0
+        nombre_mes = calendar.month_name[month]
         registros = [r for r in expenses if int(r['fecha'].split('/')[1]) == month]
         total = sum(int(expense['amount']) for expense in registros)
         for expense in registros:
             total = total + int(expense['amount'])
-        print(f"Total expenses for {month}: {total}")
+        print(f"Total expenses for {nombre_mes}: {total}")
     else:
         for expense in expenses:
             total = total + int(expense['amount'])
