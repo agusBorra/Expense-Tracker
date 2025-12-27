@@ -1,6 +1,8 @@
 
 HOW TO USE
-example:
+
+
+COMMANDS:
 $ expense-tracker add --description "Lunch" --amount 20
 # Expense added successfully (ID: 1)
 
